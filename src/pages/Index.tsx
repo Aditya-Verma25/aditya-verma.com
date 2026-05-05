@@ -1,16 +1,45 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Nav } from "@/components/portfolio/Nav";
+import { Hero } from "@/components/portfolio/Hero";
+import { Marquee } from "@/components/portfolio/Marquee";
+import { About } from "@/components/portfolio/About";
+import { Work } from "@/components/portfolio/Work";
+import { Experience } from "@/components/portfolio/Experience";
+import { Education } from "@/components/portfolio/Education";
+import { Research } from "@/components/portfolio/Research";
+import { Community } from "@/components/portfolio/Community";
+import { Contact } from "@/components/portfolio/Contact";
+import { Footer } from "@/components/portfolio/Footer";
+import { useEffect } from "react";
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
+const Index = () => {
+  useEffect(() => {
+    document.title = "Aditya Verma — Software Engineer & Product Builder";
+    const meta = document.querySelector('meta[name="description"]');
+    const desc = "Aditya Verma — CS @ University of Maryland. Software engineer building AI-powered products, RAG systems, and full-stack tools. Open to Summer 2026 internships.";
+    if (meta) meta.setAttribute("content", desc);
+    else {
+      const m = document.createElement("meta");
+      m.name = "description";
+      m.content = desc;
+      document.head.appendChild(m);
+    }
+  }, []);
+
   return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
-    </div>
+    <main className="min-h-screen relative">
+      <Nav />
+      <Hero />
+      <Marquee />
+      <About />
+      <Work />
+      <Experience />
+      <Education />
+      <Research />
+      <Community />
+      <Contact />
+      <Footer />
+    </main>
   );
 };
-
-const Index = PlaceholderIndex;
 
 export default Index;
