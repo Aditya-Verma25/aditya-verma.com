@@ -10,7 +10,7 @@ const projects = [
     subtitle: "AI Health Intelligence",
     body: "AI-powered app that analyzes medical lab results and generates plain-English health insights, personalized action plans, and follow-up recommendations. Multi-service backend, secure auth, and a longitudinal tracker.",
     stack: ["Next.js", "Supabase", "Clerk Auth", "Anthropic API", "TypeScript"],
-    href: "https://github.com/aditya-verma25",
+    href: "https://lab-lens-theta.vercel.app/",
     cta: "View Project",
     accent: "from-amber-400/20 to-orange-600/10",
   },
