@@ -4,7 +4,7 @@ import { SectionLabel } from "./SectionLabel";
 
 const links = [
   { icon: Mail, label: "adityavermaus@outlook.com", href: "mailto:adityavermaus@outlook.com" },
-  { icon: Linkedin, label: "linkedin.com/in/aditya-verma25", href: "https://linkedin.com/in/aditya-verma25" },
+  { icon: Linkedin, label: "linkedin.com/in/adityaverma25", href: "https://linkedin.com/in/adityaverma25" },
   { icon: Github, label: "github.com/aditya-verma25", href: "https://github.com/aditya-verma25" },
 ];
 
