@@ -4,15 +4,15 @@ Hey! I'm **Aditya Verma**, a Computer Science student at the **University of Mar
 
 This repository contains the source code for my personal portfolio website. I built it to showcase my projects, software engineering background, backend microservices, and community work.
 
-🌐 **Live Website:** [aditya-verma.com](https://aditya-verma.com)
+🌐 **Live Website:** <a href="https://aditya-verma.com" target="_blank" rel="noopener noreferrer">aditya-verma.com</a>
 
 ---
 
 ## 🚀 Featured Projects
 
-- **[JobzTracker](https://www.jobztracker.app)** — Production job application tracking platform featuring an AST-based `.docx` document parser, a custom Chrome extension for instant job scraping, Stripe subscription billing, Sentry error monitoring, and Docker deployment.
-- **[LabLens AI](https://lab-lens-theta.vercel.app/)** — Health tech application that parses lab blood test PDFs and uses structured AI pipelines to translate complex medical markers into plain-English health insights.
-- **[FutureReady Prep](https://futurereadyprep.org)** — Non-profit college prep platform built with React, TypeScript, and Vite featuring a weighted college-matching algorithm evaluating 80+ universities against student profiles.
+- **<a href="https://www.jobztracker.app" target="_blank" rel="noopener noreferrer">JobzTracker</a>** — Production job application tracking platform featuring an AST-based `.docx` document parser, a custom Chrome extension for instant job scraping, Stripe subscription billing, Sentry error monitoring, and Docker deployment.
+- **<a href="https://lab-lens-theta.vercel.app/" target="_blank" rel="noopener noreferrer">LabLens AI</a>** — Health tech application that parses lab blood test PDFs and uses structured AI pipelines to translate complex medical markers into plain-English health insights.
+- **<a href="https://futurereadyprep.org" target="_blank" rel="noopener noreferrer">FutureReady Prep</a>** — Non-profit college prep platform built with React, TypeScript, and Vite featuring a weighted college-matching algorithm evaluating 80+ universities against student profiles.
 
 ---
 
@@ -27,7 +27,7 @@ This repository contains the source code for my personal portfolio website. I bu
 
 ## 💼 Experience & Leadership
 
-- **Software Engineering Intern** @ [TinyMedic](https://tinymedic.com/about) — Built patient portal features and Spring Boot REST API microservices serving 100+ rural hospitals.
+- **Software Engineering Intern** @ <a href="https://tinymedic.com/about" target="_blank" rel="noopener noreferrer">TinyMedic</a> — Built patient portal features and Spring Boot REST API microservices serving 100+ rural hospitals.
 - **Founder & Lead Developer** @ FutureReady Prep — Grew monthly active users by 445% through custom SEO and organic acquisition strategies.
 - **Director of Professional Development** @ Product Space UMD — Leading technical workshops and product roadmapping sessions for 50+ members.
 - **Volunteer** @ Terps Against Hunger — Packaging non-perishable meals for food-insecure families across Maryland.
@@ -50,12 +50,12 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:8080](http://localhost:8080) in your browser to view the site.
+Open <a href="http://localhost:8080" target="_blank" rel="noopener noreferrer">http://localhost:8080</a> in your browser to view the site.
 
 ---
 
 ## 📫 Connect With Me
 
-- **Email:** [adityavermaus@outlook.com](mailto:adityavermaus@outlook.com)
-- **LinkedIn:** [linkedin.com/in/adityaverma25](https://linkedin.com/in/adityaverma25)
-- **GitHub:** [github.com/aditya-verma25](https://github.com/aditya-verma25)
+- **Email:** <a href="mailto:adityavermaus@outlook.com" target="_blank" rel="noopener noreferrer">adityavermaus@outlook.com</a>
+- **LinkedIn:** <a href="https://linkedin.com/in/adityaverma25" target="_blank" rel="noopener noreferrer">linkedin.com/in/adityaverma25</a>
+- **GitHub:** <a href="https://github.com/aditya-verma25" target="_blank" rel="noopener noreferrer">github.com/aditya-verma25</a>
