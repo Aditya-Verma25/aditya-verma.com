@@ -27,7 +27,7 @@ This repository contains the source code for my personal portfolio website. I bu
 
 ## 💼 Experience & Leadership
 
-- **Software Engineering Intern** @ [TinyMedic](https://tinymedic.org) — Built patient portal features and Spring Boot REST API microservices serving 100+ rural hospitals.
+- **Software Engineering Intern** @ [TinyMedic](https://tinymedic.com/about) — Built patient portal features and Spring Boot REST API microservices serving 100+ rural hospitals.
 - **Founder & Lead Developer** @ FutureReady Prep — Grew monthly active users by 445% through custom SEO and organic acquisition strategies.
 - **Director of Professional Development** @ Product Space UMD — Leading technical workshops and product roadmapping sessions for 50+ members.
 - **Volunteer** @ Terps Against Hunger — Packaging non-perishable meals for food-insecure families across Maryland.
