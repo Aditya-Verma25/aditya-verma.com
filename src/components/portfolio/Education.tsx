@@ -8,9 +8,8 @@ const schools = [
     when: "Sep 2025 – May 2028 (Expected)",
     gpa: "3.66 / 4.00",
     bullets: [
-      "★ Honors: President's Scholarship · Dean's List",
-      "★ DECA International Top 10 Finalist · National Merit Commended Scholar",
-      "◈ Coursework: Computer Systems, Data Structures, Discrete Structures, Statistics, Linear Algebra",
+      "★ Honors: President's Scholarship · Dean's List · National Merit Commended Scholar",
+      "◈ Coursework: CMSC131, CMSC132, CMSC216, CMSC250, MATH141, MATH240, STAT400",
     ],
   },
   {
