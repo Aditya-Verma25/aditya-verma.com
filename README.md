@@ -8,7 +8,7 @@ This repository contains the source code for my personal portfolio website. I bu
 
 ---
 
-## 🚀 Featured Projects
+## Featured Projects
 
 - **<a href="https://www.jobztracker.app" target="_blank" rel="noopener noreferrer">JobzTracker</a>** — Production job application tracking platform featuring an AST-based `.docx` document parser, a custom Chrome extension for instant job scraping, Stripe subscription billing, Sentry error monitoring, and Docker deployment.
 - **<a href="https://lab-lens-theta.vercel.app/" target="_blank" rel="noopener noreferrer">LabLens AI</a>** — Health tech application that parses lab blood test PDFs and uses structured AI pipelines to translate complex medical markers into plain-English health insights.
@@ -16,7 +16,7 @@ This repository contains the source code for my personal portfolio website. I bu
 
 ---
 
-## 🛠️ Technical Stack
+## Technical Stack
 
 - **Languages:** Python, Java, TypeScript, JavaScript, SQL, C
 - **Backend & Web:** Spring Boot, FastAPI, Next.js, Node.js, REST APIs, PostgreSQL, Prisma, Docker
@@ -25,7 +25,7 @@ This repository contains the source code for my personal portfolio website. I bu
 
 ---
 
-## 💼 Experience & Leadership
+## Experience & Leadership
 
 - **Software Engineering Intern** @ **TinyMedic** — Engineered patient portal UI components and Spring Boot REST API microservices, enabling secure medical record access across 100+ rural hospitals.
 - **Founder & Lead Developer** @ **FutureReady Prep** — Developed a full-stack admissions guidance platform using React, TypeScript, and Vite, driving a 445% MAU increase via targeted SEO and organic acquisition.
@@ -34,7 +34,7 @@ This repository contains the source code for my personal portfolio website. I bu
 
 ---
 
-## 💻 Local Development Setup
+## Local Development Setup
 
 To run this site locally on your machine:
 
@@ -54,7 +54,7 @@ Open <a href="http://localhost:8080" target="_blank" rel="noopener noreferrer">h
 
 ---
 
-## 📫 Connect With Me
+## Connect With Me
 
 - **Email:** <a href="mailto:adityavermaus@outlook.com" target="_blank" rel="noopener noreferrer">adityavermaus@outlook.com</a>
 - **LinkedIn:** <a href="https://linkedin.com/in/adityaverma25" target="_blank" rel="noopener noreferrer">linkedin.com/in/adityaverma25</a>
