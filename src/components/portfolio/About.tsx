@@ -63,14 +63,14 @@ export const About = () => {
                 transition={{ duration: 0.5, delay: catIdx * 0.05 }}
                 className="grid grid-cols-1 md:grid-cols-12 gap-4 items-start pb-8 border-b hairline last:border-0 last:pb-0"
               >
-                <h4 className="col-span-12 md:col-span-4 font-display text-lg md:text-xl font-semibold text-primary tracking-tight pt-1">
+                <h4 className="col-span-12 md:col-span-3 font-display text-lg md:text-xl font-semibold text-primary tracking-tight pt-1">
                   {cat.category}
                 </h4>
-                <div className="col-span-12 md:col-span-8 flex flex-wrap gap-2.5">
+                <div className="col-span-12 md:col-span-9 flex flex-wrap items-center gap-2">
                   {cat.skills.map((s) => (
                     <span
                       key={s}
-                      className="px-4 py-2 border border-border/80 rounded-xl font-sans text-sm font-semibold text-foreground/90 hover:border-primary hover:text-primary hover:bg-primary/10 transition-all cursor-default bg-secondary/20 shadow-sm"
+                      className="px-3 py-1.5 md:px-3.5 md:py-1.5 border border-border/80 rounded-xl font-sans text-xs md:text-sm font-semibold text-foreground/90 hover:border-primary hover:text-primary hover:bg-primary/10 transition-all cursor-default bg-secondary/20 shadow-sm whitespace-nowrap"
                     >
                       {s}
                     </span>
