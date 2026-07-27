@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
-import { ArrowDownRight, ArrowUpRight } from "lucide-react";
+import { ArrowDownRight, ArrowUpRight, Github, Linkedin, Mail } from "lucide-react";
 
 const stats = [
-  { v: "3.73", l: "GPA · Dean's List" },
-  { v: "250%", l: "TSA Chapter Growth" },
-  { v: "$1M+", l: "Education Funding" },
-  { v: "100+", l: "Hospitals Served" },
+  { v: "Languages", l: "Python · Java · TypeScript · JavaScript · SQL · C" },
+  { v: "Backend", l: "Spring Boot · FastAPI · Next.js · Node.js · REST APIs" },
+  { v: "Databases", l: "PostgreSQL · MongoDB · SQLite · Prisma · S3" },
+  { v: "AI & DevOps", l: "LLMs · RAG · LangChain · OpenCV · AWS · Docker" },
 ];
 
 const ease = [0.22, 1, 0.36, 1] as const;
@@ -19,10 +19,10 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease }}
-          className="font-mono text-[11px] uppercase tracking-[0.25em] text-muted-foreground flex items-center gap-3 mb-12"
+          className="inline-flex items-center gap-2.5 font-sans text-xs md:text-sm font-semibold tracking-wide text-foreground bg-primary/10 border border-primary/25 px-4 py-2 rounded-full mb-12 shadow-sm"
         >
-          <span className="h-px w-10 bg-primary" />
-          Open to Summer 2026 Internships
+          <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+          <span>Open to Summer 2027 Software Engineering Internships</span>
         </motion.div>
 
         {/* Title */}
@@ -45,7 +45,7 @@ export const Hero = () => {
               initial={{ y: 80 }}
               animate={{ y: 0 }}
               transition={{ duration: 1, ease, delay: 0.25 }}
-              className="block italic font-normal text-primary pl-[8vw]"
+              className="block italic font-normal text-primary pl-[4vw]"
             >
               Verma.
             </motion.span>
@@ -58,36 +58,84 @@ export const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease, delay: 0.5 }}
-            className="col-span-12 md:col-span-5 md:col-start-1"
+            className="col-span-12 md:col-span-7 md:col-start-1"
           >
-            <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
-              <span className="text-primary">//</span> CS @ Maryland · Engineer & Product Builder
+            <p className="font-mono text-xs md:text-sm uppercase tracking-[0.22em] text-muted-foreground mb-4 font-medium">
+              <span className="text-primary">//</span> CS @ MARYLAND · SOFTWARE ENGINEER · PRODUCT BUILDER
             </p>
-            <p className="text-lg md:text-xl text-pretty leading-relaxed text-foreground/85">
-              I build at the intersection of <em className="font-display text-primary not-italic">engineering</em> and <em className="font-display italic">usability</em> — from AI-powered apps to retrieval systems and full-stack tools.
-            </p>
+            <div className="space-y-3 text-lg md:text-xl text-pretty leading-relaxed text-foreground/85">
+              <p>
+                I build <em className="font-display text-primary not-italic font-normal">full-stack software</em> and <em className="font-display italic font-normal">AI-powered applications</em>, from backend APIs and databases to retrieval systems and user-facing products.
+              </p>
+              <p className="text-foreground/75 font-light">
+                I enjoy turning complex problems into practical, reliable software.
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-2 mt-6">
+              {["Python", "Java", "TypeScript", "Spring Boot", "FastAPI", "Next.js", "RAG & LLMs", "PostgreSQL", "Docker", "AWS"].map((skill) => (
+                <span key={skill} className="font-sans text-sm font-semibold px-4 py-2 bg-primary/10 text-primary rounded-lg border border-primary/25 shadow-sm hover:bg-primary/20 transition-all cursor-default">
+                  {skill}
+                </span>
+              ))}
+            </div>
           </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease, delay: 0.65 }}
-            className="col-span-12 md:col-span-5 md:col-start-8 flex flex-col gap-3 self-end"
+            className="col-span-12 md:col-span-5 md:col-start-8 flex flex-col gap-2.5 self-end"
           >
             <a
               href="#work"
-              className="group flex items-center justify-between border hairline rounded-full px-6 py-4 hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all"
+              className="group flex items-center justify-between px-6 py-3.5 rounded-full bg-foreground text-background hover:bg-foreground/90 transition-all font-sans font-semibold text-base shadow-md cursor-pointer border-2 border-primary"
             >
-              <span className="font-display text-lg">View selected work</span>
-              <ArrowDownRight className="w-5 h-5 group-hover:rotate-45 transition-transform" />
+              <span>View selected work</span>
+              <ArrowDownRight className="w-5 h-5 text-primary group-hover:rotate-45 transition-transform" />
             </a>
-            <a
-              href="#contact"
-              className="group flex items-center justify-between rounded-full px-6 py-4 bg-foreground text-background hover:bg-primary hover:text-primary-foreground transition-all"
-            >
-              <span className="font-display text-lg">Get in touch</span>
-              <ArrowUpRight className="w-5 h-5 group-hover:rotate-45 transition-transform" />
-            </a>
+
+            {/* Direct High-Visibility Contact & Profile Links */}
+            <div className="flex flex-col gap-2.5 pt-2">
+              <a
+                href="https://github.com/aditya-verma25"
+                target="_blank"
+                rel="noreferrer"
+                className="group flex items-center justify-between px-6 py-3.5 rounded-xl bg-secondary/30 text-foreground hover:bg-secondary/60 hover:border-primary/50 border border-border/70 font-sans font-medium text-sm transition-all"
+              >
+                <div className="flex items-center gap-3">
+                  <Github className="w-4.5 h-4.5 text-muted-foreground group-hover:text-primary transition-colors" />
+                  <span>GitHub</span>
+                  <span className="text-xs font-mono font-normal text-muted-foreground">/aditya-verma25</span>
+                </div>
+                <ArrowUpRight className="w-4 h-4 text-muted-foreground group-hover:text-primary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
+              </a>
+
+              <a
+                href="https://linkedin.com/in/adityaverma25"
+                target="_blank"
+                rel="noreferrer"
+                className="group flex items-center justify-between px-6 py-3.5 rounded-xl bg-secondary/30 text-foreground hover:bg-secondary/60 hover:border-primary/50 border border-border/70 font-sans font-medium text-sm transition-all"
+              >
+                <div className="flex items-center gap-3">
+                  <Linkedin className="w-4.5 h-4.5 text-muted-foreground group-hover:text-primary transition-colors" />
+                  <span>LinkedIn</span>
+                  <span className="text-xs font-mono font-normal text-muted-foreground">/in/adityaverma25</span>
+                </div>
+                <ArrowUpRight className="w-4 h-4 text-muted-foreground group-hover:text-primary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
+              </a>
+
+              <a
+                href="mailto:adityavermaus@outlook.com"
+                className="group flex items-center justify-between px-6 py-3.5 rounded-xl bg-secondary/30 text-foreground hover:bg-secondary/60 hover:border-primary/50 border border-border/70 font-sans font-medium text-sm transition-all"
+              >
+                <div className="flex items-center gap-3">
+                  <Mail className="w-4.5 h-4.5 text-muted-foreground group-hover:text-primary transition-colors" />
+                  <span>Email</span>
+                  <span className="text-xs font-mono font-normal text-muted-foreground">adityavermaus@outlook.com</span>
+                </div>
+                <ArrowUpRight className="w-4 h-4 text-muted-foreground group-hover:text-primary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
+              </a>
+            </div>
           </motion.div>
         </div>
 
@@ -99,9 +147,9 @@ export const Hero = () => {
           className="grid grid-cols-2 md:grid-cols-4 gap-px bg-border mt-24 border hairline"
         >
           {stats.map((s) => (
-            <div key={s.l} className="bg-background p-6 md:p-8 group hover:bg-secondary transition-colors">
-              <div className="font-display text-4xl md:text-5xl tracking-tight gradient-text">{s.v}</div>
-              <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground mt-2">{s.l}</div>
+            <div key={s.v} className="bg-background p-6 md:p-8 group hover:bg-secondary/40 transition-colors">
+              <div className="font-display text-2xl md:text-3xl font-medium tracking-tight text-primary">{s.v}</div>
+              <div className="font-sans text-sm md:text-base font-medium text-foreground/80 mt-3 leading-relaxed">{s.l}</div>
             </div>
           ))}
         </motion.div>

@@ -3,104 +3,116 @@ import { SectionLabel } from "./SectionLabel";
 
 const roles = [
   {
-    org: "TinyMedic",
-    when: "Jun – Aug 2025",
-    type: "Internship · Remote",
-    title: "Software Development Intern",
+    org: "FutureReady College & Career Prep",
+    when: "May 2026 – Present",
+    type: "Founder & Lead Developer",
+    title: "Founder & Software Developer",
     points: [
-      "Built and improved patient portal interfaces for a healthcare platform serving 100+ rural hospitals.",
-      "Developed front-end components for medical records, lab results, and portal services.",
-      "Integrated Spring Boot REST APIs to retrieve and display patient data on the client side.",
-      "Identified UI bottlenecks and refined page structure to improve workflow efficiency.",
+      "Founded and built a college admissions platform using React, TypeScript, Vite, and Vercel, developing reusable UI components and client-side routing.",
+      "Designed and implemented a weighted college-matching algorithm evaluating 80+ universities against student profiles (GPA, SAT, budget, location).",
+      "Grew monthly active users by 445% through search engine optimization (SEO) and organic acquisition strategies.",
     ],
-    tags: ["Java", "Spring Boot", "JavaScript", "REST APIs"],
+    tags: ["React", "TypeScript", "Vite", "Vercel", "Algorithms"],
+  },
+  {
+    org: "TinyMedic",
+    when: "Summer 2025",
+    type: "Internship · Remote",
+    title: "Software Engineering Intern",
+    points: [
+      "Collaborated with senior engineers to develop patient portal interfaces and front-end components using HTML, CSS, and JavaScript.",
+      "Enabled patients across 100+ rural hospitals to securely access medical records, lab results, and medication history.",
+      "Contributed Spring Boot REST API endpoints, following controller/service architecture and DTO conventions to securely expose patient data.",
+    ],
+    tags: ["Java", "Spring Boot", "REST APIs", "JavaScript", "HTML/CSS"],
   },
   {
     org: "Product Space UMD",
     when: "Oct 2025 – Present",
-    type: "Fellowship · On-site",
-    title: "Director of Professional Development & PM Fellow",
+    type: "Leadership · On-site",
+    title: "Director of Professional Development",
     points: [
-      "Selected for competitive PM fellowship; collaborated with Spotter AI on product positioning.",
-      "Conducted user research, developed personas, translated insights into PRDs and roadmaps.",
-      "Leads career development programming for 50+ members — workshops, mock interviews, guest speakers.",
-      "Built 'Hire or Fire' resume reviews simulating real recruiting decisions.",
+      "Led technical workshops, speaker sessions, and networking events for UMD's chapter of a national product organization.",
+      "Conducted user research and recommended features for SpotterAI, a live iOS/Android AI fitness app, to inform the product roadmap.",
+      "Built educational programming and mock recruiting review processes for 50+ general body members.",
     ],
-    tags: ["Product Strategy", "User Research", "Figma", "Roadmapping"],
+    tags: ["Product Strategy", "User Research", "Technical Workshops", "Roadmapping"],
   },
   {
     org: "Issaquah Schools Foundation",
     when: "Aug 2023 – Jun 2025",
-    type: "Leadership · On-site",
-    title: "Student Trustee",
+    type: "Board Position · On-site",
+    title: "Student Trustee, Executive Board",
     points: [
-      "Collaborated with board of directors and superintendent to allocate $1M+ in funding impacting 19,000+ students.",
-      "Advised on district initiatives to improve educational programs and outcomes.",
-      "Served as liaison between students and administration, influencing policy decisions.",
+      "Represented 18,000+ students on the executive board of a district nonprofit, translating student insights into funding recommendations.",
+      "Advised on the allocation of $1M+ in educational grants and program funding across the school district.",
+      "Delivered monthly impact reports and student feedback directly to the board of trustees and superintendent.",
     ],
-    tags: ["Leadership", "Public Speaking", "Policy", "Stakeholders"],
-  },
-  {
-    org: "Technology Student Association",
-    when: "Aug 2023 – Jun 2025",
-    type: "Chapter President",
-    title: "Chapter President & Treasurer",
-    points: [
-      "Grew chapter membership to 250% of prior year with 45+ STEM-aligned members competing statewide.",
-      "Managed $2,000+ in chapter assets; organized fundraising for chapter activities and STEM outreach.",
-      "Led team to Washington TSA State Conference; partnered with local sponsors.",
-    ],
-    tags: ["Team Mgmt", "Fundraising", "Budgeting", "STEM Outreach"],
+    tags: ["Leadership", "Strategic Planning", "Funding Allocation", "Stakeholder Mgmt"],
   },
 ];
 
 export const Experience = () => {
   return (
-    <section id="experience" className="relative py-32 bg-secondary/20">
+    <section id="experience" className="relative py-32 bg-secondary/15">
       <div className="mx-auto max-w-7xl px-6 md:px-10">
-        <SectionLabel index="03" label="Professional Experience" />
-        <h2 className="font-display font-light text-5xl md:text-7xl leading-[0.95] tracking-[-0.03em] mb-20">
-          Where I've <span className="italic text-primary">worked</span>.
-        </h2>
+        <SectionLabel index="03" label="Experience" />
+        <div className="flex items-end justify-between flex-wrap gap-6 mb-20">
+          <h2 className="font-display font-light text-5xl md:text-7xl leading-[0.95] tracking-[-0.03em]">
+            Where I've <span className="italic text-primary">worked</span>.
+          </h2>
+          <p className="max-w-md text-muted-foreground text-base">
+            Software engineering internships, founder experience, and technical leadership.
+          </p>
+        </div>
 
         <div className="relative">
-          {/* timeline line */}
-          <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-px bg-border" aria-hidden />
-          <div className="space-y-20">
+          {/* Vertical Timeline Bar */}
+          <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-border/80" aria-hidden />
+
+          <div className="space-y-16">
             {roles.map((r, i) => (
               <motion.div
                 key={r.org}
-                initial={{ opacity: 0, y: 40 }}
+                initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-80px" }}
-                transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-                className={`relative grid grid-cols-1 md:grid-cols-2 gap-8 ${i % 2 === 1 ? "md:[&>*:first-child]:order-2" : ""}`}
+                viewport={{ once: true, margin: "-60px" }}
+                transition={{ duration: 0.6, delay: i * 0.08 }}
+                className={`relative grid grid-cols-1 md:grid-cols-2 gap-8 items-start ${
+                  i % 2 === 1 ? "md:[&>*:first-child]:order-2" : ""
+                }`}
               >
-                {/* dot */}
-                <div className="absolute left-0 md:left-1/2 top-2 -translate-x-1/2 w-3 h-3 rounded-full bg-primary ring-4 ring-background" />
+                {/* Timeline Dot */}
+                <div className="absolute left-4 md:left-1/2 top-6 -translate-x-1/2 z-10 w-4 h-4 rounded-full bg-primary ring-4 ring-background shadow-md shadow-primary/30" />
 
-                <div className={`pl-8 md:pl-0 ${i % 2 === 0 ? "md:pr-12 md:text-right" : "md:pl-12"}`}>
-                  <div className="font-mono text-[11px] uppercase tracking-[0.2em] text-primary mb-2">{r.when}</div>
-                  <h3 className="font-display text-3xl md:text-4xl tracking-tight">{r.org}</h3>
-                  <p className="font-mono text-xs uppercase tracking-[0.18em] text-muted-foreground mt-1">{r.type}</p>
+                {/* Left/Right Header Info */}
+                <div className={`pl-12 md:pl-0 ${i % 2 === 0 ? "md:pr-12 md:text-right" : "md:pl-12"}`}>
+                  <div className="font-mono text-xs uppercase tracking-[0.2em] text-primary mb-2 font-medium">{r.when}</div>
+                  <h3 className="font-display text-3xl md:text-4xl font-normal tracking-tight">{r.org}</h3>
+                  <p className="font-display italic text-lg text-muted-foreground mt-1">{r.title}</p>
+                  <span className="inline-block font-mono text-[10px] uppercase tracking-[0.18em] px-3 py-1 border hairline rounded-full bg-primary/10 text-primary font-medium mt-3">
+                    {r.type}
+                  </span>
                 </div>
 
-                <div className={`pl-8 md:pl-0 ${i % 2 === 0 ? "md:pl-12" : "md:pr-12"}`}>
-                  <p className="font-display italic text-xl mb-4 text-foreground">{r.title}</p>
-                  <ul className="space-y-2.5 text-foreground/80 text-sm leading-relaxed">
-                    {r.points.map((p) => (
-                      <li key={p} className="flex gap-3">
-                        <span className="text-primary mt-1.5">→</span>
-                        <span>{p}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <div className="flex flex-wrap gap-2 mt-5">
-                    {r.tags.map((t) => (
-                      <span key={t} className="font-mono text-[10px] uppercase tracking-[0.15em] px-2.5 py-1 border hairline rounded-full text-muted-foreground">
-                        {t}
-                      </span>
-                    ))}
+                {/* Content Card */}
+                <div className={`pl-12 md:pl-0 ${i % 2 === 0 ? "md:pl-12" : "md:pr-12"}`}>
+                  <div className="border hairline rounded-2xl bg-background p-6 md:p-8 hover:border-primary/40 transition-colors shadow-sm">
+                    <ul className="space-y-3 text-foreground/85 text-sm md:text-base leading-relaxed">
+                      {r.points.map((p) => (
+                        <li key={p} className="flex items-start gap-3">
+                          <span className="text-primary mt-1 select-none">→</span>
+                          <span>{p}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <div className="flex flex-wrap gap-2 pt-5 mt-5 border-t hairline">
+                      {r.tags.map((t) => (
+                        <span key={t} className="font-sans text-xs bg-secondary/30 text-foreground/90 px-3 py-1 rounded-xl font-medium border border-border/60">
+                          {t}
+                        </span>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </motion.div>

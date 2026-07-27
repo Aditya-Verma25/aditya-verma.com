@@ -8,7 +8,7 @@ export const Research = () => {
       <div className="mx-auto max-w-7xl px-6 md:px-10">
         <SectionLabel index="05" label="Research" />
         <h2 className="font-display font-light text-5xl md:text-7xl leading-[0.95] tracking-[-0.03em] mb-4">
-          Peer-reviewed <span className="italic text-primary">publication</span>.
+          Published <span className="italic text-primary">research</span>.
         </h2>
         <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground mb-16">
           // Computer Vision · AI/ML · Published Jul 2024

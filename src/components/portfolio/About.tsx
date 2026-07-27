@@ -1,17 +1,19 @@
 import { motion } from "framer-motion";
 import { SectionLabel } from "./SectionLabel";
 
-const skills = [
-  "Java", "Python", "TypeScript", "React / Next.js", "Spring Boot",
-  "FastAPI", "PostgreSQL", "Docker", "RAG", "Vector DBs",
-  "OpenCV", "LangChain", "Supabase", "Git / CI/CD", "Figma",
+const skillCategories = [
+  { category: "Programming Languages", skills: ["Python", "Java", "TypeScript", "JavaScript", "SQL", "C", "HTML", "CSS"] },
+  { category: "Frameworks & Backend", skills: ["React", "Next.js", "Node.js", "FastAPI", "Spring Boot", "Flask", "Prisma", "REST APIs", "JUnit"] },
+  { category: "Databases & Data", skills: ["PostgreSQL", "MongoDB", "SQLite", "NumPy", "Pandas"] },
+  { category: "AI & Machine Learning", skills: ["LLMs", "OpenAI/Claude/Gemini APIs", "LangChain", "RAG", "OpenCV", "CNNs"] },
+  { category: "Cloud & DevOps", skills: ["AWS (EC2, S3, IAM, RDS)", "Git", "Docker", "GitHub Actions", "CI/CD", "Vercel"] },
 ];
 
 const cards = [
-  { icon: "◎", title: "University of Maryland", lines: ["B.S. Computer Science · Minor in Business Analytics", "College Park Scholars — Data Justice", "Expected Dec 2028"], badge: "3.73 GPA" },
-  { icon: "◐", title: "Greater Seattle Area", lines: ["Open to on-site, hybrid & remote.", "Available for Summer 2026 internship."], badge: "Available" },
-  { icon: "◈", title: "Multilingual", lines: ["Native English & Hindi · Working Spanish", "TED/TEDx subtitle translator"], badge: "500K+ views" },
-  { icon: "◇", title: "Published Researcher", lines: ["Computer vision paper in Research Archive of Rising Scholars", "CNN-based chess board recognition"], badge: "Jul 2024" },
+  { icon: "◎", title: "University of Maryland", lines: ["B.S. Computer Science (Machine Learning Track)", "President's Scholar & Dean's List", "Expected Graduation: May 2028"], badge: "3.66 GPA" },
+  { icon: "⚡", title: "Full-Stack Architecture", lines: ["JobzTracker & LabLens AI production platforms", "AST-based Word (.docx) parser & Chrome extension", "Docker containerization, Sentry & Stripe"], badge: "Production SaaS" },
+  { icon: "🧠", title: "AI & Retrieval Systems", lines: ["Context-aware RAG pipelines with LangChain & ChromaDB", "OpenAI, Claude & Gemini API provider abstractions", "Local Ollama & cloud LLM vector retrieval"], badge: "RAG / LLMs" },
+  { icon: "🛡️", title: "Backend Infrastructure", lines: ["Spring Boot & FastAPI microservices at TinyMedic", "Controller / Service / DTO architecture & REST APIs", "Serving patient records across 100+ rural hospitals"], badge: "Backend SWE" },
 ];
 
 export const About = () => {
@@ -27,7 +29,7 @@ export const About = () => {
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             className="col-span-12 md:col-span-7 font-display font-light text-5xl md:text-7xl leading-[0.95] tracking-[-0.03em] text-balance"
           >
-            Engineer who <span className="italic text-primary">thinks</span> in products.
+            Building robust, intelligent <span className="italic text-primary">backend</span> systems.
           </motion.h2>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -37,32 +39,44 @@ export const About = () => {
             className="col-span-12 md:col-span-5 md:col-start-8 space-y-5 text-foreground/80 text-base leading-relaxed self-end"
           >
             <p>
-              CS student at the University of Maryland (GPA 3.73, Dean's List) with a minor in Business Analytics. I build at the intersection of <em className="text-primary not-italic font-medium">backend engineering</em> and <em className="font-display italic">product thinking</em>.
+              CS student at the University of Maryland on the Machine Learning track. I specialize in backend systems, REST APIs, retrieval pipelines, and AI-native applications.
             </p>
             <p>
-              Experience spans healthcare SaaS at <strong className="font-medium">TinyMedic</strong>, AI-native product development, and hands-on leadership influencing <strong className="font-medium">$1M+</strong> in public funding.
+              My experience ranges from developing patient portal APIs and Spring Boot services at <strong className="font-medium">TinyMedic</strong> to building flagship SaaS products and leading educational tech platforms.
             </p>
             <p className="font-mono text-xs uppercase tracking-[0.18em] text-muted-foreground pt-4 border-t hairline">
-              <span className="text-primary">//</span> Seeking Summer 2026 internships — SWE, backend, AI/ML, or technical product
+              <span className="text-primary">//</span> Seeking Summer 2027 internships — Software Engineering (SWE), Backend, or AI/ML
             </p>
           </motion.div>
         </div>
 
         {/* Skills */}
         <div className="mt-24">
-          <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground mb-6">// Technical Arsenal</p>
-          <div className="flex flex-wrap gap-2">
-            {skills.map((s, i) => (
-              <motion.span
-                key={s}
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
+          <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground mb-10">// Technical Arsenal & Core Stack</p>
+          <div className="space-y-8">
+            {skillCategories.map((cat, catIdx) => (
+              <motion.div
+                key={cat.category}
+                initial={{ opacity: 0, x: -10 }}
+                whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.3, delay: i * 0.03 }}
-                className="px-4 py-2 border hairline rounded-full font-mono text-xs hover:border-primary hover:text-primary transition-colors cursor-default"
+                transition={{ duration: 0.5, delay: catIdx * 0.05 }}
+                className="grid grid-cols-1 md:grid-cols-12 gap-4 items-start pb-8 border-b hairline last:border-0 last:pb-0"
               >
-                {s}
-              </motion.span>
+                <h4 className="col-span-12 md:col-span-4 font-display text-lg md:text-xl font-semibold text-primary tracking-tight pt-1">
+                  {cat.category}
+                </h4>
+                <div className="col-span-12 md:col-span-8 flex flex-wrap gap-2.5">
+                  {cat.skills.map((s) => (
+                    <span
+                      key={s}
+                      className="px-4 py-2 border border-border/80 rounded-xl font-sans text-sm font-semibold text-foreground/90 hover:border-primary hover:text-primary hover:bg-primary/10 transition-all cursor-default bg-secondary/20 shadow-sm"
+                    >
+                      {s}
+                    </span>
+                  ))}
+                </div>
+              </motion.div>
             ))}
           </div>
         </div>

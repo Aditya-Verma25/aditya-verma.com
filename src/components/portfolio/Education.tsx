@@ -4,15 +4,13 @@ import { SectionLabel } from "./SectionLabel";
 const schools = [
   {
     name: "University of Maryland",
-    degree: "B.S. Computer Science · Minor in Business Analytics",
-    when: "Sep 2025 – Dec 2028 (Expected)",
-    gpa: "3.73 / 4.00",
+    degree: "B.S. Computer Science (Machine Learning Track)",
+    when: "Sep 2025 – May 2028 (Expected)",
+    gpa: "3.66 / 4.00",
     bullets: [
-      "★ Dean's List, Fall 2025",
-      "★ OMSE Academic Excellence Award Nominee, May 2026",
-      "◈ College Park Scholars — Data Justice",
-      "◈ ACM · GDSC · Product Space · SASA",
-      "◈ Courses: Designing Fair Systems, Calculus II",
+      "★ Honors: President's Scholarship · Dean's List",
+      "★ DECA International Top 10 Finalist · National Merit Commended Scholar",
+      "◈ Coursework: Computer Systems, Data Structures, Discrete Structures, Statistics, Linear Algebra",
     ],
   },
   {

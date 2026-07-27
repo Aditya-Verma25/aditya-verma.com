@@ -3,9 +3,9 @@ import { ArrowUpRight, Mail, Linkedin, Github } from "lucide-react";
 import { SectionLabel } from "./SectionLabel";
 
 const links = [
-  { icon: Mail, label: "adityavermaus@outlook.com", href: "mailto:adityavermaus@outlook.com" },
-  { icon: Linkedin, label: "linkedin.com/in/adityaverma25", href: "https://linkedin.com/in/adityaverma25" },
-  { icon: Github, label: "github.com/aditya-verma25", href: "https://github.com/aditya-verma25" },
+  { icon: Mail, label: "adityavermaus@outlook.com", href: "mailto:adityavermaus@outlook.com", cta: "Email Me" },
+  { icon: Linkedin, label: "linkedin.com/in/adityaverma25", href: "https://linkedin.com/in/adityaverma25", cta: "LinkedIn" },
+  { icon: Github, label: "github.com/aditya-verma25", href: "https://github.com/aditya-verma25", cta: "GitHub" },
 ];
 
 export const Contact = () => {
@@ -30,11 +30,11 @@ export const Contact = () => {
         </motion.h2>
 
         <p className="text-lg md:text-xl text-foreground/80 max-w-2xl mb-16 leading-relaxed">
-          Actively seeking <strong className="text-primary font-medium">Summer 2026 internships</strong> in software engineering, backend development, AI/ML-adjacent engineering, or technical product roles. If you're looking for someone who codes with product thinking and leads with initiative — let's connect.
+          Actively seeking <strong className="text-primary font-medium">Summer 2027 internships</strong> in software engineering, backend systems, full-stack development, or AI applications. If you're looking for an engineer who builds robust solutions and is driven to learn — let's connect.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-border border hairline">
-          {links.map(({ icon: Icon, label, href }) => (
+          {links.map(({ icon: Icon, label, href, cta }) => (
             <a
               key={href}
               href={href}
@@ -45,7 +45,7 @@ export const Contact = () => {
               <Icon className="w-6 h-6 mb-6 text-primary group-hover:text-primary-foreground transition-colors" />
               <p className="font-display text-lg break-all leading-tight mb-4">{label}</p>
               <span className="font-mono text-[10px] uppercase tracking-[0.2em] inline-flex items-center gap-1">
-                Connect <ArrowUpRight className="w-3 h-3 group-hover:rotate-12 transition-transform" />
+                {cta} <ArrowUpRight className="w-3 h-3 group-hover:rotate-12 transition-transform" />
               </span>
             </a>
           ))}

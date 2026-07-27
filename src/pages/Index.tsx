@@ -13,9 +13,9 @@ import { useEffect } from "react";
 
 const Index = () => {
   useEffect(() => {
-    document.title = "Aditya Verma — Software Engineer & Product Builder";
+    document.title = "Aditya Verma — Software Engineer & Backend Builder";
     const meta = document.querySelector('meta[name="description"]');
-    const desc = "Aditya Verma — CS @ University of Maryland. Software engineer building AI-powered products, RAG systems, and full-stack tools. Open to Summer 2026 internships.";
+    const desc = "Aditya Verma — CS @ University of Maryland. Software engineer building backend systems, full-stack applications, and AI integrations. Open to Summer 2027 internships.";
     if (meta) meta.setAttribute("content", desc);
     else {
       const m = document.createElement("meta");

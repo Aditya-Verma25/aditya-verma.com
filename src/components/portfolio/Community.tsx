@@ -6,22 +6,25 @@ const items = [
     icon: "🌐",
     role: "Multilingual Translator",
     org: "TED Conferences",
-    body: "Translated subtitles for TED and TEDx talks into English, Spanish, and Hindi — improving global accessibility of educational content.",
-    meta: "Jan 2023 – Present · 500K+ cumulative views",
+    body: "Translated subtitles for TED & TEDx educational talks into English, Spanish, and Hindi — connecting global audiences to ideas in science, technology, and design with over half a million total views.",
+    meta: "Jan 2023 – Present · 500,000+ Global Viewers Impacted",
+    badge: "★ 500K+ Views Impact",
+  },
+  {
+    icon: "🍲",
+    role: "Meal Packaging & Hunger Relief",
+    org: "Terps Against Hunger · UMD",
+    body: "Package nutritious, non-perishable meals during campus-wide meal packing events, supporting food-insecure families and local food banks across Prince George's County and Maryland.",
+    meta: "University of Maryland · Community Service",
+    badge: "UMD Hunger Relief",
   },
   {
     icon: "🎓",
     role: "Student Mentor",
     org: "VOICE Mentor Program · Issaquah",
-    body: "Mentored students needing academic, social, and emotional support. Built consistent 1:1 relationships and tracked progress with program staff.",
-    meta: "Sep 2023 – Jun 2025 · 1 yr 10 mos",
-  },
-  {
-    icon: "🔬",
-    role: "Teaching Assistant",
-    org: "Best in Class Education",
-    body: "Supported student success through grading, substituting, and coordinating with teachers. Brand ambassador encouraging program enrollment.",
-    meta: "Jul 2024 – Apr 2025 · 10 mos",
+    body: "Mentored K-12 students needing academic, social, and emotional support. Built consistent 1:1 relationships and tracked progress with program staff.",
+    meta: "Sep 2023 – Jun 2025 · Academic Guidance",
+    badge: "Youth Mentorship",
   },
 ];
 
@@ -45,12 +48,17 @@ export const Community = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: i * 0.1 }}
-              className="bg-background p-8 group hover:bg-secondary/40 transition-colors"
+              className="bg-background p-8 group hover:bg-secondary/40 transition-colors relative"
             >
-              <div className="text-4xl mb-6">{it.icon}</div>
+              <div className="flex items-center justify-between mb-6">
+                <span className="text-4xl">{it.icon}</span>
+                <span className="font-mono text-[11px] font-semibold uppercase tracking-[0.15em] px-3 py-1 border hairline rounded-full bg-primary/10 text-primary">
+                  {it.badge}
+                </span>
+              </div>
               <h3 className="font-display text-2xl tracking-tight">{it.role}</h3>
               <p className="font-display italic text-muted-foreground mb-4">{it.org}</p>
-              <p className="text-sm text-foreground/75 leading-relaxed mb-6">{it.body}</p>
+              <p className="text-sm text-foreground/80 leading-relaxed mb-6">{it.body}</p>
               <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-primary border-t hairline pt-4">{it.meta}</p>
             </motion.div>
           ))}
