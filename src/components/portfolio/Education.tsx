@@ -9,7 +9,7 @@ const schools = [
     gpa: "3.66 / 4.00",
     bullets: [
       "★ Honors: President's Scholarship · Dean's List · National Merit Commended Scholar",
-      "◈ Coursework: CMSC131, CMSC132, CMSC216, CMSC250, MATH141, MATH240, STAT400",
+      "◈ Coursework: CMSC131 (OOP I) · CMSC132 (OOP II) · CMSC216 (Computer Systems) · CMSC250 (Discrete Structures) · MATH141 (Calculus II) · MATH240 (Linear Algebra) · STAT400 (Applied Probability & Statistics)",
     ],
   },
   {
