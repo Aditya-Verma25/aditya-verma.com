@@ -3,10 +3,11 @@ import { SectionLabel } from "./SectionLabel";
 
 const skillCategories = [
   { category: "Programming Languages", skills: ["Python", "Java", "TypeScript", "JavaScript", "SQL", "C", "HTML", "CSS"] },
-  { category: "Frameworks & Backend", skills: ["React", "Next.js", "Node.js", "FastAPI", "Spring Boot", "Flask", "Prisma", "REST APIs", "JUnit"] },
-  { category: "Databases & Data", skills: ["PostgreSQL", "MongoDB", "SQLite", "NumPy", "Pandas"] },
+  { category: "Frameworks & Tools", skills: ["React", "Next.js", "Node.js", "FastAPI", "Spring Boot", "Flask", "Prisma", "REST APIs", "Vite", "JUnit Testing"] },
+  { category: "Databases & Data", skills: ["PostgreSQL", "MongoDB", "SQLite", "ChromaDB", "Supabase", "NumPy", "Pandas"] },
   { category: "AI & Machine Learning", skills: ["LLMs", "OpenAI/Claude/Gemini APIs", "LangChain", "RAG", "OpenCV", "CNNs"] },
-  { category: "Cloud & DevOps", skills: ["AWS (EC2, S3, IAM, RDS)", "Git", "Docker", "GitHub Actions", "CI/CD", "Vercel"] },
+  { category: "Cloud & DevOps", skills: ["AWS (EC2, S3, IAM)", "Git", "Linux/Unix", "Docker", "GitHub Actions", "CI/CD", "Vercel", "Railway"] },
+  { category: "Spoken Languages", skills: ["English (Native)", "Hindi (Native)", "Spanish (Proficient)"] },
 ];
 
 const cards = [

@@ -41,17 +41,6 @@ const projects = [
   },
   {
     n: "04",
-    tag: "Open Source",
-    title: "RAG Chatbot",
-    subtitle: "Document Q&A with Local and Cloud LLMs",
-    body: "Implemented a Python RAG chatbot using LangChain and ChromaDB to ingest PDF/text documents, retrieve relevant context, and generate grounded answers. Containerized with Docker, deployed on Railway with switches between local (Ollama) and cloud (Claude) LLMs.",
-    stack: ["Python", "LangChain", "ChromaDB", "Ollama", "Claude API", "Docker"],
-    href: "https://github.com/aditya-verma25",
-    cta: "View Project",
-    accent: "from-violet-400/15 to-indigo-600/10",
-  },
-  {
-    n: "05",
     tag: "Published",
     title: "Chess AI Vision",
     subtitle: "Computer Vision Pipeline",

@@ -3,16 +3,28 @@ import { SectionLabel } from "./SectionLabel";
 
 const roles = [
   {
+    org: "Enosys.ai × App Dev @ UMD",
+    when: "Sep 2026 – Present",
+    type: "Frontend Engineer",
+    title: "Frontend Engineer",
+    points: [
+      "Developing full-stack features for My Academic Planner (MAP) using React, TypeScript, Python, and Supabase/PostgreSQL, integrating REST APIs and semester-specific course data into interactive academic planning workflows.",
+      "Engineering drag-and-drop scheduling, conflict detection, and AI-powered features using the Anthropic API.",
+      "Collaborating with Git and GitHub, Docker Compose for containerized development, and automated testing.",
+    ],
+    tags: ["React", "TypeScript", "Python", "Supabase", "PostgreSQL", "Anthropic API", "Docker"],
+  },
+  {
     org: "FutureReady College & Career Prep",
     when: "May 2026 – Present",
-    type: "Founder & Lead Developer",
+    type: "Founder",
     title: "Founder & Software Developer",
     points: [
-      "Founded and built a college admissions platform using React, TypeScript, Vite, and Vercel, developing reusable UI components and client-side routing.",
-      "Designed and implemented a weighted college-matching algorithm evaluating 80+ universities against student profiles (GPA, SAT, budget, location).",
-      "Grew monthly active users by 445% through search engine optimization (SEO) and organic acquisition strategies.",
+      "Built and deployed a college admissions platform using React, TypeScript, Vite, and Vercel, with reusable components, responsive interfaces, and client-side routing.",
+      "Implemented a weighted college-matching algorithm that evaluates 80+ universities using GPA, SAT, major, location, and budget to recommend reach, target, and likely schools.",
+      "Increased monthly active users by 445% through SEO and organic acquisition.",
     ],
-    tags: ["React", "TypeScript", "Vite", "Vercel", "Algorithms"],
+    tags: ["React", "TypeScript", "Vite", "Vercel", "SEO", "Algorithms"],
   },
   {
     org: "TinyMedic",
@@ -20,9 +32,9 @@ const roles = [
     type: "Internship · Remote",
     title: "Software Engineering Intern",
     points: [
-      "Collaborated with senior engineers to develop patient portal interfaces and front-end components using HTML, CSS, and JavaScript.",
-      "Enabled patients across 100+ rural hospitals to securely access medical records, lab results, and medication history.",
-      "Contributed Spring Boot REST API endpoints, following controller/service architecture and DTO conventions to securely expose patient data.",
+      "Developed responsive patient portal interfaces using JavaScript, HTML, and CSS for a healthcare platform serving 100+ rural hospitals.",
+      "Implemented and tested Java and Spring Boot REST API endpoints for patient lab results and medication records.",
+      "Used controller-service architecture and DTO patterns to integrate backend services with frontend components.",
     ],
     tags: ["Java", "Spring Boot", "REST APIs", "JavaScript", "HTML/CSS"],
   },
@@ -34,7 +46,6 @@ const roles = [
     points: [
       "Led technical workshops, speaker sessions, and networking events for UMD's chapter of a national product organization.",
       "Conducted user research and recommended features for SpotterAI, a live iOS/Android AI fitness app, to inform the product roadmap.",
-      "Built educational programming and mock recruiting review processes for 50+ general body members.",
     ],
     tags: ["Product Strategy", "User Research", "Technical Workshops", "Roadmapping"],
   },
@@ -44,8 +55,7 @@ const roles = [
     type: "Board Position · On-site",
     title: "Student Trustee, Executive Board",
     points: [
-      "Represented 18,000+ students on the executive board of a district nonprofit, translating student insights into funding recommendations.",
-      "Advised on the allocation of $1M+ in educational grants and program funding across the school district.",
+      "Represented 18,000+ students on the executive board of a district nonprofit, translating student insights into $1M+ in funding recommendations.",
       "Delivered monthly impact reports and student feedback directly to the board of trustees and superintendent.",
     ],
     tags: ["Leadership", "Strategic Planning", "Funding Allocation", "Stakeholder Mgmt"],
